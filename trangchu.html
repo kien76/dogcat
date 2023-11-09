@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetHouse</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="./js/trangchu.js"></script>
+</head>
+
+<body onload="loadAnh();">
+    <div class="sl">
+        <!-- Định dạng slider -->
+        <div class="back-end">
+            
+            <div class="slider-small">
+                <img name="img_slider" src="img/slider2.jpg" onmousemove="onMouseMoveEvent();"
+                    onmouseout="onMouseOutEvent();" width="280px" height="600px">
+            </div>
+
+            <div class="slider-big">
+                <!-- ĐỊNH DẠNG SLIDER -->
+                <div class="image">
+                    <img id="img" onclick="changeImage()" src="./img/image1.jpg" alt="">
+                </div>
+
+
+                <script>
+                    var slider = 1;
+                    changeImage = function () {
+                        var img = ["img/image1.jpg", "img/image2.jpg", "img/image3.jpg", "img/image4.jpg", "img/image5.jpg"];
+                        document.getElementById('img').src = img[slider];
+                        slider++;
+                        if (slider == 5) {
+                            slider = 0;
+                        }
+                    }
+                    setInterval(changeImage, 1800);
+
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="boder">
+        <div class="soluoc">
+            <h2>SƠ LƯỢC VỀ PET HOUSE</h2>
+            <p class="p-1">Pet House là trại nhân giống thú cảnh lớn tại Việt Nam và đồng thời là hệ thống cửa hàng cung
+                cấp phụ kiện, dịch vụ chăm sóc làm đẹp thú cưng & khách sạn thú cưng.</p>
+            <p class="p-1">Với sự đa dạng về các giống chó mèo cảnh, chúng tôi đảm bảo chất lượng con giống, nguồn gen
+                chuẩn cùng quy trình nhân giống chuyên nghiệp. Tại Pet House, các con giống đều là dòng thuần chủng,
+                được chăm sóc kỹ lưỡng và có sức khỏe tốt, sẵn sàng về nhà mới.</p>
+        </div>
+    </div>
+    <div class="end">
+        <h2>GIỐNG CHÓ PHỔ BIẾN HIỆN NAY</h2>
+        <div class="end-1">
+            <div class="end-bweet">
+                <a href="tc-chow.html">
+                    <img src="./img/chow.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>CHÓ CHOW CHOW</p>
+                </a>
+            </div>
+            <div class="end-bweet">
+                <a href="tc-poodle.html">
+                    <img src="./img/poodle 2.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>CHÓ POODLE</p>
+                </a>
+            </div>
+            <div class="end-bweet">
+                <a href="tc-samoyed.html">
+                    <img src="./img/samoyed5.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>CHÓ SAMOYED</p>
+                </a>
+            </div>
+            <div class="end-bweet">
+                <a href="tc-alaska.html">
+                    <img src="./img/alk7.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>CHÓ AlASKA</p>
+                </a>
+            </div>
+            <div class="end-bweet">
+                <a href="tc-golden.html">
+                    <img src="./img/golden.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>CHÓ GOLDEN</p>
+                </a>
+            </div>
+        </div>
+        <div class="end-1">
+            <div class="end-bweet">
+                <a href="tc-phocsoc.html">
+                    <img src="./img/ps4.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>CHÓ PHỐC SÓC</p>
+                </a>
+            </div>
+            <div class="end-bweet">
+                <a href="tc-cogri.html">
+                    <img src="./img/cogri3.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>CHÓ CORGI CHÂN LÙN</p>
+                </a>
+            </div>
+            <div class="end-bweet">
+                <a href="tc-shiba.html">
+                    <img src="./img/shiba.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>CHÓ SHIBA</p>
+                </a>
+            </div>
+        </div>
+        <div id="XT">
+            <div class="xemthem">
+                <a href="chocanh.html" target="_self" class="button primary" style="border-radius:10px;"> <span>Xem
+                        thêm</span></a>
+                <script>document.querySelector("#col-1487566136 > div > a:nth-child(4)")</script>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <h2>GIỐNG MÈO PHỔ BIẾN HIỆN NAY</h2>
+        <div class="end-1">
+            <div class="end-bweet">
+                <a href="tc-main.html">
+                    <img src="./img/mm3.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p> MÈO MAINE COON</p>
+                </a>
+            </div>
+            <div class="end-bweet">
+                <a href="tc-meoanhLN.html">
+                    <img src="./img/anh ngắn1.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>Mèo Anh Lông Ngắn </p>
+                </a>
+            </div>
+            <div class="end-bweet">
+                <a href="tc-MALD.html">
+                    <img src="./img/anh dai1.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>Mèo Anh Lông Dài</p>
+                </a>
+            </div>
+            <div class="end-bweet">
+                <a href="tc-ragdoll.html">
+                    <img src="./img/rd2.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                        width="250px" height="250px">
+                    <p>Mèo Ragdoll </p>
+                </a>
+            </div>
+        </div>
+        <div id="XT">
+            <div class="xemthem">
+                <a href="meocanh.html" target="_self" class="button primary" style="border-radius:10px;"> <span>Xem
+                        thêm</span></a>
+                <script>document.querySelector("#col-1487566136 > div > a:nth-child(4)")</script>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="uy-tin">
+        <div class="bween">
+            <img src="./img/van-chuyen-mien-phi.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+                width="100px" height="70px">
+            <h4>MIỄN PHÍ VẬN CHUYỂN</h4>
+            <p>GIAO HÀNG TOÀN QUỐC: MÁY BAY, TÀU HỎA, TAXI...</p>
+        </div>
+        <div class="bween">
+            <img src="./img/qua-tang.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="100px"
+                height="70px">
+            <h4>QUÀ TẶNG HẤP DẪN</h4>
+            <p>TẶNG KÈM PHỤ KIỆN CẦN THIẾT CHO THÚ CƯNG.</p>
+        </div>
+        <div class="bween">
+            <img src="./img/chung100.png" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="100px"
+                height="80px">
+            <h4>CAM KẾT THUẦN CHỦNG 100%</h4>
+            <p>CAM KẾT THÚ CƯNG THUẦN CHỦNG KHÔNG LAI TẠP.</p>
+        </div>
+        <div class="bween">
+            <img src="./img/bảo hành.png" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="100px"
+                height="80px">
+            <h4>BẢO HÀNH SỨC KHỎE TOÀN DIỆN</h4>
+            <p>BÀN GIAO TỚI KHÁCH HÀNG THÚ CƯNG KHỎE MẠNH.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

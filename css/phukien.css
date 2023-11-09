@@ -1,0 +1,50 @@
+.PHUKIEN{
+    text-align: center;
+}
+.PK{
+    display: flex;
+    justify-content: center;
+}
+.small{
+    border: 1px solid #348afa;
+    margin: 10px;
+    box-shadow: 5px 5px #348afa;
+}
+.small p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 350px;
+    height: auto;
+    font-size: 20px;
+}
+.small p:hover{
+    color: #348afa;
+    font-weight: bold;
+}
+.small p:hover{
+    color: #348afa;
+    font-weight: bold;
+}
+h1{
+    color: #348afa;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 b{
+    color: rgb(29, 29, 29);
+}
+h2{
+    color: rgb(59, 59, 59);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p{
+    color: gray;
+    
+}
+p{
+    color: red;
+}
+.main-iframe {
+    width: 100%;
+    height: 1000px; 
+}

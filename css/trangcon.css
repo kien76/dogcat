@@ -1,0 +1,284 @@
+.main{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.main-1{
+    margin-right: 10px;
+   
+}
+.main-2{
+    margin-right: 5px;
+}
+.main img{
+    width: 100px;
+    height: 130px;
+}
+#main-image{
+    width: 500px;
+    height: 500px;
+}
+#main-image img{
+    width: 500px;
+    height: 500px;
+}
+.big-sanpham{
+    display: flex;
+    /* border: 1px solid gray; */
+    margin: 15px;
+    width: 1300px;
+}
+.small-sampham-1{
+    margin-right: 70px;
+    display: flex;
+}
+.money{
+    color: #224DCC;
+    font-size: 30px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+/* Mô tả*/
+.mota{
+    font-size: 18px;
+}
+.aligncenter {
+    clear: both;
+}
+table, td, th {
+    border: 1px dashed #8b7e7ea8 !important;
+    border-collapse: inherit !important;
+    color: black;
+   
+}
+table {
+    width: 100%;
+    border-color: #ececec;
+    border-spacing: 0px;
+   
+}
+
+
+.button-1{
+    padding: 18px;
+    width: 300px;
+    font-size: 18px;
+    color: #224DCC;
+    border: 2px solid #224DCC;
+}
+.button-2{
+    padding: 18px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #224DCC;
+    border: 2px solid #224DCC;
+    color: white;
+}
+.button-3{
+    text-align: center;
+    padding: 10px;
+}
+.button-4{
+    padding: 18px;
+    width: 300px;
+    font-size: 18px;
+    color: #224DCC;
+    font-weight: bold;
+    border: 2px solid #224DCC;
+}
+.style{
+    display: flex;
+}
+.soluong-3{
+    display: flex;
+}
+#buy-amount{
+    display: flex;
+}
+#buy-amount #amount{
+    width: 40px;
+    text-align: center;
+    border: 1px solid gray;
+}
+#buy-amount button{
+    width: 35px;
+    height: 35px;
+    outline: none;
+    background: none;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+#buy-amount button:hover{
+    background-color: #224DCC;
+}
+.plus-btn:hover{
+    color: white;
+    font-weight: bold;
+}
+.minus-btn:hover{
+    color: white;
+    font-weight: bold;
+}
+.style{
+    display: flex;
+}
+.style-1{
+    padding-right: 10px;
+}
+
+.soluong{
+    display: flex;
+}
+.soluong-1{
+    padding-right: 10px;
+}
+.soluong-3{
+    padding-top: 18px;
+}
+
+
+.stars ul {
+    list-style: none;
+}
+.star {
+    font-size: 2em;
+    color: gray;
+    display: inline-block;
+}
+
+.orange {
+    color: orange;
+}
+
+.output {
+    background-color: #ddd;
+}
+.danhgiasanpham{
+    display: flex;
+}
+
+.diemdanhgiatrungbinh{
+    text-align: center;
+    padding-left: 40%;
+    width: 100%;
+}
+.diemdanhgiatrungbinh .strar-1{
+    font-size: 25px;
+}
+.diemdanhgiatrungbinh .star-2{
+    font-size: 50px;
+    margin-top: -10px;
+    font-weight: bold;
+    color: #224DCC;
+}
+.diemdanhgiatrungbinh .star-3{
+    font-size: 15px;
+    margin-top: -30px;
+    color: gray;
+}
+.diemdanhgiatrungbinh .star-4{
+    font-size: 18px;
+}
+
+.h1{    
+    padding-left: 555px;
+    color: #224DCC;
+    padding-top: 60px;
+}
+.danhgia-2{
+    margin-top: -10px;
+    padding-left: 15%;
+    width: 25%;
+}
+/*-----------*/
+form label, textarea {
+	display: block;
+	margin-bottom: 15px;
+}
+
+form input[type="text"], form input[type="email"], textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.822);
+}
+
+form button[type="submit"] {
+	background-color: #1f1e1e;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+	background-color: #666;
+}
+
+
+
+
+
+.poodle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.small-poodle{
+    border: 1px solid #348afa;
+    margin: 10px;
+    box-shadow: 5px 5px #348afa;
+}
+.small-poodle p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 350px;
+    height: auto;
+    font-size: 20px;
+}
+.small-poodle p:hover{
+    color: #348afa;
+    font-weight: bold;
+}
+.small-poodle p:hover{
+    color: #348afa;
+    font-weight: bold;
+}
+h1{
+    color: #348afa;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 b{
+    color: rgb(29, 29, 29);
+}
+h2{
+    color: rgb(59, 59, 59);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p{
+    color: gray;
+    
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 20px 50px;
+}
+.tien{
+    color: #ff0000;
+    font-weight: bold;
+}
+.sp-cungdanhmuc{
+    text-align: center;
+    color: #224DCC;
+}
+
+
+
+
+

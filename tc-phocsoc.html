@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chó Alaska</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/trangcon.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="big-sanpham">
+        <div class="small-sampham-1">
+            <div class="main">
+                <div class="main-1"><img src="./img/ps4.jpg" alt="" onclick="image('one')" id="one"></div>
+                <div class="main-2"><img src="./img/ps4.2.jpg" alt="" onclick="image('two')" id="two"></div>
+            </div>
+            <div id="main-image">
+                <a href="./img/ps4.jpg" data-fancybox="images"><img src="./img/ps4.jpg" alt="" id="img-main"></a>
+            </div>
+        </div>
+        <script>
+            function image(id) {
+                let imagePath = document.getElementById(id).getAttribute('src');
+                document.getElementById('img-main').setAttribute('src', imagePath);
+            }
+            //zoom ảnh
+            $('[data-fancybox="images"]').fancybox({
+                baseClass: 'myFancyBox',
+                thumbs: {
+                    autoStart: true,
+                    axis: 'x'
+                }
+            })
+        </script>
+        <div class="small-sampham-2">
+            <h1>Chó Phốc Sóc đực mã PS0127</h1>
+            <p class="money">6.500.000 ₫</p>
+            <hr>
+            <h2>Mô tả:</h2>
+            <table class=" aligncenter" style="border-collapse: collapse;width: 100%;height: auto">
+                <tbody>
+                    <tr style="height: 35px">
+                        <td style="width: 50%;height: 21px;text-align: left">Tháng tuổi: 2 tháng tuổi</td>
+                        <td style="width: 50%;height: 21px;text-align: left">Bố: Rasta</td>
+                    </tr>
+                    <tr style="height: 35px">
+                        <td style="width: 50%;height: 21px">Giới tính: Đực</td>
+                        <td style="width: 50%;height: 21px">Mẹ: Miza</td>
+                    </tr>
+                    <tr style="height: 35px">
+                        <td style="width: 50%;height: 21px">Màu: Trắng đemn</td>
+                        <td style="width: 50%;height: 21px">Sức khỏe: Nhanh nhẹn, ăn uống tốt</td>
+                    </tr>
+                    <tr style="height: 35px">
+                        <td style="width: 50%;height: 21px">Tình trạng: Có Sẵn</td>
+                        <td style="width: 50%;height: 21px">Vận chuyển: Miễn phí</td>
+                    </tr>
+                    <tr style="height: 35px">
+                        <td style="width: 50%;height: 21px">Tẩy giun: 2 lần</td>
+                        <td style="width: 50%;height: 21px">Tiêm phòng: 1 mũi vacxin</td>
+                    </tr>
+                    <tr style="height: 35px">
+                        <td style="width: 50%;height: 21px">Nguồn gốc: Thuần chủng, sinh sản tại Trại Pethouse</td>
+                        <td style="width: 50%;height: 21px">Đặc điểm: Lông dày</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><b>Lưu ý:</b><i> Giá sản phẩm có thể thay đổi theo từng thời điểm. <b
+                        style="color: rgb(35, 130, 255);">Kết Bạn Zalo </b> hoặc Gọi <b style="color: red;">Hotline</b>
+                    để xem thêm hình ảnh/video chi tiết.</i></p>
+            <div class="soluong">
+                <div class="soluong-1">
+                    <h2>Số lượng:</h2>
+                </div>
+                <div class="soluong-2">
+                    <div class="soluong-3">
+                        <div id="buy-amount">
+                            <button class="minus-btn" onclick="handleMinus()"><span
+                                    class="glyphicon">&#x2212;</span></button>
+                            <input type="text" name="amount" id="amount" value="1">
+                            <button class="plus-btn" onclick="handlePlus()"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                let amountElement = document.getElementById('amount');
+                let amount = amountElement.value;
+                // console.log(amount)
+                let render = (amount) => {
+                    amountElement.value = amount
+                }
+                let handlePlus = () => {
+                    amount++
+                    render(amount);
+                }
+                // handleMinus
+                let handleMinus = () => {
+                    if (amount > 1)
+                        amount--
+                    render(amount);
+                }
+                amountElement.addEventListener('input', () => {
+                    amount = amountElement.value;
+                    amount = parseInt(amount);
+                    amount = (isNaN(amount) || amount == 0) ? 1 : amount;
+                    render(amount);
+                    console.log(amount);
+                });
+            </script>
+            <button class="button-1"><i class="fa-solid fa-cart-shopping"></i>
+                Thêm vào giỏ hàng</button>
+            <button class="button-2">Mua ngay</button>
+            <br>
+            <div class="button-3">
+                <button class="button-4">Kiểm tra cửa hàng còn hàng</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.parent.postMessage("scroll-to-top", "*");
+    </script>
+
+
+    <h1 class="h1"><u>ĐÁNH GIÁ SẢN PHẨM</u></h1>
+    <div class="danhgiasanpham">
+        <div class="danhgia-2">
+            <main>
+                <section>
+                    <h2>Góp ý của bạn:</h2>
+                    <form id="feedback-form">
+                        <label for="name">Họ tên:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="feedback">Nội dung:</label>
+                        <textarea id="feedback" name="feedback" required></textarea>
+
+                        <button type="submit">Gửi</button>
+                    </form>
+                </section>
+                <section>
+                    <h2>Các góp ý khác:</h2>
+                    <ul id="feedback-list">
+                        <li>Cảm ơn Pethouse đã cung cấp sản phẩm chất lượng!</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <!--góp ý-->
+        <script>
+            const feedbackForm = document.getElementById('feedback-form');
+            const feedbackList = document.getElementById('feedback-list');
+
+            feedbackForm.addEventListener('submit', e => {
+                e.preventDefault();
+
+                const name = feedbackForm.elements.name.value;
+                const email = feedbackForm.elements.email.value;
+                const feedback = feedbackForm.elements.feedback.value;
+
+                feedbackList.innerHTML += `<li><strong>${name}:</strong> ${feedback}</li>`;
+
+                feedbackForm.reset();
+            });
+
+        </script>
+        <div class="danhgia">
+            <div class="diemdanhgiatrungbinh">
+                <p class="strar-1">ĐÁNH GIÁ SẢN PHẨM</p>
+                <p class="star-2">0/5</p>
+                <p class="star-3">(chưa có lược đánh giá)</p>
+                <p class="star-4">Hãy là người đầu tiên nhận xét “Chó Phốc Sóc đực mã PS0127” </p>
+                <ul class="stars">
+                    <li class="star">&#10029;</li>
+                    <li class="star">&#10029;</li>
+                    <li class="star">&#10029;</li>
+                    <li class="star">&#10029;</li>
+                    <li class="star">&#10029;</li>
+                </ul>
+                <div class="output"></div>
+                <script>
+                    const starsUL = document.querySelector(".stars");
+                    const output = document.querySelector(".output");
+                    const stars = document.querySelectorAll(".star");
+                    stars.forEach((star, index) => {
+                        star.starValue = index + 1;
+                        star.addEventListener("click", starRate);
+                    });
+                    function starRate(e) {
+                        // output.innerHTML = `You Rated this ${e.target.starValue}`;
+                        stars.forEach((star, index) => {
+                            if (index < e.target.starValue) {
+                                star.classList.add("orange");
+                            } else {
+                                star.classList.remove("orange");
+                            }
+                        });
+                    }
+                </script>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h1 class="sp-cungdanhmuc"><u>SẢN PHẨM TƯƠNG TỰ</u></h1>
+    <div class="poodle">
+        <div class="small-poodle">
+            <img src="./img/ps1.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="350" height="320px">
+            <p class="p"><i class='fas fa-paw'></i><i>Chó Phốc Sóc vàng mơ mã PS829</i></p>
+            <p class="tien">9.500.000 ₫</p>
+        </div>
+        <div class="small-poodle">
+            <img src="./img/ps2.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="350" height="320px">
+            <p class="p"><i class='fas fa-paw'></i><i>Chó Phốc Sóc Mini Vip kem mã PS374</i></p>
+            <p class="tien"><strike>19.000.000</strike> <mark>15.600.000 ₫</mark> </p>
+        </div>
+
+        <div class="small-poodle">
+            <img src="./img/ps3.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="350" height="320px">
+            <p class="p"><i class='fas fa-paw'></i><i>Chó Phốc Sóc vàng cam mã PS829</i></p>
+            <p class="tien">15.000.000 ₫</p>
+        </div>
+        <div class="small-poodle">
+            <img src="./img/ps4.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="350" height="320px">
+            <p class="p"><i class='fas fa-paw'></i><i>Chó Phốc Sóc đực mã PS0127</i></p>
+            <p class="tien">6.500.000 ₫</p>
+        </div>
+    </div>
+    <script>
+        function bigImg(x) {
+            // x.style.height = "300px";
+            // x.style.width = "300px";
+            x.style = `transform: scale(0.9)`
+        }
+
+        function normalImg(x) {
+            // x.style.height = "280px";
+            // x.style.width = "280px";
+            x.style = `transform: scale(1)`
+
+        }
+        const btn1 = document.querySelector(".button-1");
+   if(btn1) {
+    btn1.addEventListener("click", function(e) {
+            window.parent.postMessage("tang-sp", "*")
+    })
+   }
+    </script>
+</body>
+
+</html>

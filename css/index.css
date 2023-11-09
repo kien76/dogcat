@@ -1,0 +1,503 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+#header {
+    position: relative;
+    margin: 0px auto;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+/**/
+.diachi {
+    background: rgb(52, 145, 252);
+    display: flex;
+    height: 40px;
+}
+
+.map {
+    color: white;
+    height: 15px;
+    padding: 10px;
+    font-size: 13px;
+    padding-left: 50px;
+}
+
+.mapg {
+
+    height: 15px;
+    padding: 10px;
+    font-size: 13px;
+    padding-left: 150px;
+}
+
+.mapp {
+    color: white;
+    height: 15px;
+    padding: 10px;
+    font-size: 13px;
+    padding-left: 200px;
+}
+
+
+#banner {
+    background-image: linear-gradient(rgb(37, 154, 221), #154eb8);
+    height: 90px;
+    position: relative;
+    display: flex;
+}
+
+.logo {
+    position: absolute;
+    bottom: 0;
+    padding-left: 70px;
+}
+/* menu */
+.menu {
+    display: flex;
+    padding: 15px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.menu>ul>li {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu>ul>li:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #6592d0;
+}
+
+.menu ul ul {
+    position: absolute;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 0 1px gray;
+}
+
+.menu ul ul a {
+    display: block;
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 0 5px;
+}
+
+.menu>ul>li:hover>ul {
+    display: block;
+}
+
+.menu ul ul a:hover {
+    background-color: #6592d0;
+    color: white;
+}
+
+/*menup*/
+.menup {
+    display: flex;
+    /* margin: auto 20px; */
+    padding-left: 180px;
+}
+
+.menup>ul>li {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.menup>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menup ul ul {
+    position: absolute;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 0 1px gray;
+}
+
+.menup ul ul a {
+    display: block;
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.menup>ul>li:hover>ul {
+    display: block;
+}
+
+
+/* search */
+.search {
+    padding: 5px;
+    justify-content: right;
+    
+}
+
+#search-box {
+    display: flex;
+    
+}
+
+#search-box #search-text {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    flex: 1;
+    border-radius: 50px 0 0 50px;
+}
+
+#search-box #search-btn {
+    background-color: rgb(197, 197, 197);
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    flex-shrink: 0;
+    border-radius: 0 30px 30px 0;
+}
+
+.main-iframe {
+    width: 100%;
+    height: 2500px;
+}
+
+/*đăng ký đăng nhập*/
+.light {
+    display: flex;
+}
+
+.form-group {
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+    font-weight: 700;
+    display: flex;
+    cursor: pointer;
+    font-size: 15px;
+
+
+}
+
+.modal-sign-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7, 7, 7, 0.5);
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    animation: fadeIn 0.5s forwards;
+}
+
+.modal-sign-in.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-sign-in .container {
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.modal-sign-in .container input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.modal-sign-in .container button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    background-image: linear-gradient(rgb(37, 154, 221), #154eb8);
+    color: white;
+    font-weight: bold;
+}
+
+.modal-sign-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s forwards;
+    display: none;
+}
+
+.form-group p:hover {
+    color: white;
+    background-image: linear-gradient(rgb(37, 154, 221), #154eb8);
+    font-weight: bold;
+    
+}
+
+.modal-sign-up.active {
+    display: flex;
+}
+
+.modal-sign-up .container {
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.modal-sign-up .container input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.modal-sign-up .container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background-image: linear-gradient(rgb(37, 154, 221), #154eb8);
+    color: white;
+    font-weight: bold;
+}
+
+.sign-in {
+    padding: 10px;
+}
+
+.sign-up {
+    padding: 10px;
+}
+/*giỏ hàng*/
+.bag-wrapper {
+    --ct--value--: "0";
+}
+
+/* .bag {
+    padding-top: 5px;
+    padding-left: 10px;
+} */
+
+.bag i {
+    color: white;
+    position: relative;
+    margin-top: 17px;
+    background-image: linear-gradient(rgb(165, 165, 165), #5a5a5a,rgb(63, 63, 63));
+    border-radius: 100%;
+}
+.bag::before {
+    content: var(--ct--value--);
+    display: inline-block;
+    font-size: 10px;
+    z-index: 999;
+    color: white;
+    background-image: linear-gradient(rgb(243, 97, 78), #ee482b);
+    position: absolute;
+    border-radius: 10px;
+    right: 20px;
+    top: 17px;
+    padding: 5px;
+}
+
+
+
+
+h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* footer */
+footer {
+    background-image: linear-gradient(rgb(37, 154, 221), #154eb8);
+    margin-top: 10px;
+    color: white;
+}
+
+.footer-big {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-small {
+    margin: 20px;
+    width: 32%;
+    padding-left: 100px;
+}
+
+.footer-small h4 {
+    margin: 10px;
+}
+
+.footer-small p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.footer-end {
+    background-color: #224DCC;
+    text-align: center;
+}
+
+.footer-end a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* liên hệ*/
+.LH{
+    display: flex;
+}
+.float-contact {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+   
+}
+.float-contact img{
+    width: 40px;
+    height: 40px;
+    animation: 1.5s infinite img-animation;
+}
+@keyframes img-animation{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(25deg);
+    }
+    20%{
+        transform: rotate(-25deg);
+    }
+    30%{
+        transform: rotate(25deg);
+    }
+    4%{
+        transform: rotate(-25deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+
+.chat-zalo {
+    background-image: linear-gradient(rgb(86, 217, 240), rgb(52, 197, 223));
+    border-radius: 13px 18px 18px 13px;
+    padding: 0 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.chat-face {
+    background-image: linear-gradient(rgb(139, 221, 253), rgb(11, 119, 182));
+    border-radius: 13px 18px 18px 13px;
+    padding: 0 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.float-contact .hotline {
+    background-image: linear-gradient(rgb(243, 79, 79), rgb(247, 0, 0));
+    border-radius: 13px 18px 18px 13px ;
+    padding: 0 18px;
+    color: white;
+}
+
+.chat-zalo a,
+.chat-face a,
+.hotline a {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+.float-contact .chat-zalo:hover,
+.float-contact .chat-face:hover,
+.float-contact .hotline:hover {
+    box-shadow: -3px 2px 2px 1px #121111;
+}
+
+@media (max-width: 549px) {
+    .float-contact {
+        display: none
+    }
+}
+
+

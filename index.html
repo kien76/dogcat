@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET HOUSE</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+    <header class="diachi">
+        <div class="map">
+            <p><i class='fas fa-map-marker-alt'></i> Cửa Hàng Miền Nam: 1045 Đường Kha Vạn Cân,Phường Linh Trung,Thủ
+                Đức,TP.HCM.</p>
+        </div>
+        <div class="mapg">
+            <a href="https://www.facebook.com/kimphung.2k4"><i class='fab fa-facebook' style="color: white;"></i></a>
+            <a href="https://www.facebook.com/kimphung.2k4"><i class='far fa-heart' style="color: white;"></i></a>
+            <a href="https://instagram.com/kimphung.2k4?igshid=ZDdkNTZiNTM="><i class='fab fa-instagram'
+                    style="color: white;"></i></a>
+            <a href=""><i class='fab fa-telegram-plane' style="color: white;"></i></a>
+        </div>
+        <div class="mapp">
+            <p><i class='fas fa-map-marker-alt'></i> Cửa Hàng Miền Bắc: 19 Nguyễn Viết Xuân,Quận Thanh Xuân, Hà Nội.
+            </p>
+        </div>
+    </header>
+
+
+    <nav id="header">
+        <div id="banner">
+            <!-- ĐỊNH DẠNG MENU-->
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="./chocanh.html" target="page" onclick="resizeIframe('3000')">
+                            <i class="fa-solid fa-shield-dog"></i> CHÓ CẢNH </a>
+                        <!--<ul>
+                            <li><a href="">Chó Poodle</a></li>
+                            <li><a href="">Chó Alaska</a></li>
+                            <li><a href="">Chó Phốc Sóc</a></li>
+                            <li><a href="">Chó Corgi</a></li>
+                            <li><a href="">Chó Golden</a></li>
+                        </ul>
+                        -->
+                    </li>
+                    <li>
+                        <a href="./meocanh.html" target="page" onclick="resizeIframe('2550')"> <i
+                                class='fab fa-github'></i> MÈO CẢNH</a>
+                        <!--
+                         <ul>
+                            <li><a href="">Mèo Anh Lông Ngắn</a></li>
+                            <li><a href="">Mèo Anh Lông Dài</a></li>
+                            <li><a href="">Mèo Ragdoll</a></li>
+                            <li><a href="">MÈO MAINE COON</a></li>
+                        </ul>
+                        -->
+                    </li>
+                    <li>
+                        <a href="./phukien.html" target="page" onclick="resizeIframe('2200')"><i
+                                class='fas fa-puzzle-piece'></i> PHỤ KIỆN </a>
+                        <!-- <ul>
+                            <li><a href="">Thức Ăn Cho Chó</a></li>
+                            <li><a href="">Thức Ăn Cho Mèo</a></li>
+                            <li><a href="">Sữa-Khăn Tắm,Nước Hoa</a></li>
+                            <li><a href="">Balo,Túi vận chuyển</a></li>
+                            <li><a href="">Thuốc và thực phẩm dinh dưỡng</a></li>
+                            <li><a href="">Cát Vệ Sinh</a></li>
+                        </ul>
+                    -->
+                    </li>
+                    <li>
+                        <a href="./gioithieu.html" target="page" onclick="resizeIframe('2700')"> <i
+                                class='far fa-user-circle'></i> GIỚI THIỆU</a>
+                    </li>
+                    <li>
+                        <a href="./lienhe.html" target="page" onclick="resizeIframe('1200')"><i class='fas fa-tty'></i>
+                            LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <ul>
+                    <div class="logo">
+                        <a href="./index.html"><img src="./img/logo.png" alt="" width="90px" height="85px"></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="menup">
+                <ul>
+                    <li>
+                        <div class="search">
+                            <form id="search-box" action="./index.html">
+                                <input type="text" id="search-text" placeholder="Search">
+                                <button id="search-btn"
+                                    class="ux-search-submit submit-button secondary button icon mb-0"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <p class="sign-in btn-sign-in" onclick="modalSignIn()"> Đăng Nhập</p>
+                            <p class="sign-up btn-sign-up">Đăng Ký</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bag-wrapper">
+                            <div class="bag">
+                                <a href=""><i style="font-size:30px" class="fa">&#xf218;</i></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <article>
+        <iframe src="./trangchu.html" frameborder="0" class="main-iframe" name="page"></iframe>
+    </article>
+    
+    <footer class="footer">
+        <div class="footer-big">
+            <div class="footer-small">
+                <h4>Sơ Lược Về PetHouse</h4>
+                <p>Pet House là trại nhân giống cung cấp thú cảnh lớn tại Việt Nam. Pet House hiện tại có 2 cửa hàng
+                    chính tại 19 Nguyễn Viết Xuân, Thanh Xuân, Hà Nội và 1045 Kha Vạn Cân, Phường Linh Trung, Thủ Đức,
+                    Tp.Hcm. Ngoài ra, trại nhân giống chính của Pet House có tại Sóc Sơn Hà Nội và Thủ Dầu Một, Bình
+                    Dương đang sở hữu hơn 500 con giống với các loại thú cảnh lớn nhỏ khác nhau.</p>
+            </div>
+            <div class="footer-small">
+                <h4>Thông Tin Liên Hệ</h4>
+                <p><i class="fa-sharp fa-solid fa-location-dot"></i> Cửa Hàng Miền Nam: 1045 Kha Vạn Cân, Linh Trung,
+                    Thủ
+                    Đức, Tp.Hcm.</p>
+                <p><i class="fa-sharp fa-solid fa-location-dot"></i> Trại nhân giống MN: Huỳnh Văn Lũy, Thủ Dầu Một,
+                    Bình
+                    Dương.</p>
+                <p><i class="fa-sharp fa-solid fa-location-dot"></i> Cửa Hàng Miền Bắc: 19 Nguyễn Viết Xuân, Quận Thanh
+                    Xuân, Tp.Hà Nội.</p>
+                <p><i class="fa-sharp fa-solid fa-location-dot"></i> Trại nhân giống MB: Thôn Đức Hậu, Xã Đức Hòa, Sóc
+                    Sơn, Tp.Hà Nội.</p>
+            </div>
+            <div class="footer-small">
+                <h4>Chính Sách Bán Hàng</h4>
+                <p>Chính sách bảo mật</p>
+                <p>Chính sách vận chuyển và thanh toán</p>
+                <p>Chính sách đổi trả và bảo hành</p>
+                <p>Chính sách hỗ trợ trả góp 0%</p>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>Copyright 2023 © PetHouse - Trại nhân giống thú cưng</p>
+            <p>Thiết Kế Bởi: <a href="https://www.facebook.com/kimphung.2k4">Bùi Thị Kim Phụng</a></p>
+        </div>
+    </footer>
+
+    <div class="float-contact">
+        <div class="LH">
+            <img src="./img/zalo.png" alt="">
+            <button class="chat-zalo">
+                <a href="http://zalo.me/0849442103"> Chat Zalo</a>
+            </button>
+        </div>
+        <div class="LH">
+            <img src="img/facebook.png" alt="">
+            <button class="chat-face">
+                <a href="https://www.facebook.com/kimphung.2k4"> Chat Facebook</a>
+            </button>
+        </div>
+        <div class="LH">
+            <img src="img/điện thoại.png" alt="">
+            <button class="hotline">
+                <a href="tel:0849442103"> Hotline: 0849.442.103</a>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function resizeIframe(height) {
+            var iframe = document.querySelector(".main-iframe");
+            iframe.style = `height: ${height}px`;
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+    <div class="modal-sign-in">
+        <form class="container">
+            <input type="text" placeholder="Điện thoại/Email:" required />
+            <input type="password" placeholder="Mât khẩu:" required />
+            <button type="submit">ĐĂNG NHẬP</button>
+        </form>
+    </div>
+    <div class="modal-sign-up">
+        <form class="container">
+            <input type="text" placeholder="Họ và tên:" required />
+            <input type="password" placeholder="Email:" required />
+            <input type="text" placeholder="Điện thoại:" />
+            <input type="password" name="" id="" placeholder="Mật khẩu:" />
+            <input type="password" name="" id="" placeholder="Nhập lại mật khẩu:" />
+            <button type="submit">ĐĂNG KÝ</button>
+        </form>
+    </div>
+    <script src="./js/app.js"></script>
+
+
+    <script>
+        const bagWrapper = document.querySelector(".bag-wrapper");
+        let count = 0;
+        window.addEventListener("message", function (e) {
+            if (e.data === "scroll-to-top") {
+                window.scrollTo(0, 0);
+            }
+            if (e.data === "tang-sp") {
+                count++;
+                bagWrapper.style = `--ct--value--: "${count}"`;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

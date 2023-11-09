@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>GIỚI THIỆU</title>
+    <link rel="stylesheet" href="./css/gioithieu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="video">
+        <h1>Video giới thiệu về PetHouse</h1>
+        <div id="player-container">
+            <video id="myplayer" width="640" height="360">
+                <source src="./img/video.mp4" type="video/mp4">
+            </video>
+            <div id="controls">
+                <button onclick="playPause()">Play <i class='far fa-play-circle'></i></button>
+                <button onclick="stopVideo()">Stop <i class='far fa-stop-circle'></i></button>
+                <button onclick="replayVideo()">Replay <i class='fas fa-sync-alt'></i></button>
+                <button onclick="increaseVolume()"><i class='fas fa-volume-down'></i></button>
+                <button onclick="decreaseVolume()"><i class='fas fa-volume-off'></i></button>
+                <button onclick="muteVolume()"><i class='fas fa-volume-mute'></i></button>
+            </div>
+        </div>
+        <script>
+            var player = document.getElementById("myplayer");
+            function playPause() {
+                if (player.paused) { player.play(); }
+                else { player.pause(); }
+            }
+            function stopVideo() {
+                player.pause();
+                if (player.currentTime) { player.currentTime = 0; }
+            }
+            function replayVideo() {
+                player.currentTime = 0;
+                player.play();
+            }
+            function increaseVolume() {
+                if (player.volume < 1)
+                    player.volume = parseFloat(player.volume + 0.1).toFixed(1);
+            }
+            function decreaseVolume() {
+                if (player.volume > 0)
+                    player.volume = parseFloat(player.volume - 0.1).toFixed(1);
+            }
+            function muteVolume() {
+                if (player.muted) { player.muted = false; }
+                else { player.muted = true; }
+            }
+        </script>
+        
+    </div>
+    <br>
+    <hr>
+    <div class="gioithieu">
+        <h2><u>GIỚI THIỆU VỀ PET HOUSE</u></h2>
+        <p><a href="./index.html">PetHouse</a> là trại nhân giống thú cảnh lớn tại Việt Nam. Với sự đa dạng về các giống
+            chó mèo cảnh. Chúng tôi đảm bảo nguồn gen tốt nhất, quy trình nhân giống chuyên nghiệp nhất. Con giống thuần
+            chủng, được chăm sóc kỹ lưỡng, sức khỏe tốt.</p>
+        <p>Pet House được thành lập từ năm 2010 với trại nhân giống đầu tiên tại <i><u> 900 Huỳnh Văn Lũy, Thủ Dầu Một,
+                    Bình Dương</u></i>. Sau 5 năm hình thành và phát triển, Pet House chính thức mở trại nhân giống thứ
+            2 tại <i><u>Đức Hòa, Sóc Sơn, Hà Nội vào năm 2015</u></i>.</p>
+        <p>Không dừng ở đó, tháng 5 năm 2017, <b>Pet House</b> khai trương showroom đầu tiên tại địa chỉ 19 Nguyễn Viết
+            Xuân, Thanh Xuân, Hà Nội với tên gọi: <b>Pet House Thú Cảnh Việt</b>.</p>
+    </div>
+    <div class="gioithieu">
+        <img src="./img/gioithieu2.jpg" alt="" width="1020px" height="765px">
+
+        <p>Tại đây, chúng tôi có sẵn đa dạng các dòng chó mèo cảnh, khách hàng có thể đến lựa chọn và đón ngay, cùng đầy
+            đủ phụ kiện cho thú cưng.</p>
+        <p>Qua nhiều năm phát triển, số lượng khách hàng trải nghiệm dịch vụ và đón thú cưng tại Pet House lên đến
+            38.000 khách hàng. <br> Chính vì vậy, Pet House cho ra đời cửa hàng chó mèo cảnh thứ 2 tại Hồ Chí Minh, toạ
+            lạc
+            tại số 1045 Kha Vạn Cân, Linh Trung, Thủ Đức, Tp HCM với tên <br><b>Pet House Sài Gòn</b></p>
+        <p>Đến nay, <b>Pet House</b> không ngừng phát triển và hoàn thiện mỗi ngày. <br> Tại đây, chúng tôi cam kết về
+            chất
+            lượng con giống, đảm bảo độ thuần chủng cũng như nguồn gen, đi cùng chế độ bảo hành tốt cho khách hàng.</p>
+    </div>
+    <hr>
+    <div class="anh">
+        <h2>Một Số hình ảnh tại PetHouse</h2>
+        <img src="./img/gt1.jpg" alt="" width="200" height="250">
+        <img src="./img/gt2.jpg" alt="" width="210" height="250">
+        <img src="./img/gt3.jpg" alt="" width="220" height="250">
+        <img src="./img/gt5.jpg" alt="" width="230" height="250">
+        <img src="./img/gt6.jpg" alt="" width="230" height="250">
+        <img src="./img/gt7.jpg" alt="" width="230" height="250">
+        <img src="./img/gt8.jpg" alt="" width="230" height="250">
+        <img src="./img/gt9.jpg" alt="" width="230" height="250">
+        <img src="./img/gt10.jpg" alt="" width="230" height="250">
+        <img src="./img/gt11.jpg" alt="" width="230" height="250">
+    </div>
+
+</body>
+
+</html>
